@@ -12,6 +12,11 @@ const App = () => {
     setSquares(Array(9).fill(null))
   }
 
+  if (squares[0] !== null && squares[1] !== null && squares[2] !== null && squares[3] !== null && squares[4] !== null && squares[5] !== null && squares[6] !== null && squares[7] !== null && squares[8] !== null ) {
+    alert("game over")
+    reset()
+  } 
+
   function calculateWinner(squares) {
       const lines = [
         [0, 1, 2],
@@ -30,6 +35,7 @@ const App = () => {
           reset()
           return squares[a];
         }
+        
       }
       return null;
     }
@@ -42,7 +48,9 @@ const App = () => {
       } else if (next === true) {
         squares[i] = "o"
       } 
+      
     }
+    
     
     
     setSquares([...squares])
