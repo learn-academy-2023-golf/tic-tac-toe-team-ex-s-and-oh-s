@@ -6,13 +6,17 @@ const App = () => {
   const [squares, setSquares] = useState(Array(9).fill(null))
 
   const [next, setNext] = useState(false)
+  console.log(squares)
 
   const handleClick= (i) => {
-    if (next === false) {
-      squares[i] = "x"
-    } else if (next === true) {
-      squares[i] = "o"
+    if (squares[i] === null) {
+      if (next === false) {
+        squares[i] = "x"
+      } else if (next === true) {
+        squares[i] = "o"
+      }
     }
+    
     
     setSquares([...squares])
     console.log(squares[i])
