@@ -8,7 +8,25 @@ const App = () => {
   return (
     <>
       <h1>Tic Tac Toe</h1>
-      <Square />
+
+      <div className='square-container'>
+        <Square />
+        <Square />
+        <Square />
+        </div>
+
+        <div className='square-container'>
+        <Square />
+        <Square />
+        <Square />
+        </div>
+
+        <div className='square-container'>
+        <Square />
+        <Square />
+        <Square />
+        </div>
+
     </>
   )
 }
