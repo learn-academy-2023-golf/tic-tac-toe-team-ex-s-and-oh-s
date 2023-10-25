@@ -65,10 +65,10 @@ branch: grid
 branch: mark
 
 - As a user, my partner can click on a square after me and see their mark.
-branch: partner click
+branch: partner-click
 
 - As a user, I can't click on a square that has already been marked.
-branch: marked no click
+branch: marked-no-click
 
 - As a user, when either my partner or I win the game (three squares in a row: horizontally, vertically, or diagonally), I can see a notice telling me which player won.
 branch: 
