@@ -80,6 +80,7 @@ branch: game-over
 branch: no-squares
 
 - As a user, I can click on a restart button that will clear the game board.
+branch: 
 
 ### 🏔 Stretch Goals
 
