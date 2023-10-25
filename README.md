@@ -77,6 +77,7 @@ branch: winner
 branch: game-over
 
 - As a user, if no more squares are available, I can see a notice telling me that the game has ended.
+branch: no-squares
 
 - As a user, I can click on a restart button that will clear the game board.
 
