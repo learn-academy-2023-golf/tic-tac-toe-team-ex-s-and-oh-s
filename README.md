@@ -71,9 +71,10 @@ branch: partner-click
 branch: marked-no-click
 
 - As a user, when either my partner or I win the game (three squares in a row: horizontally, vertically, or diagonally), I can see a notice telling me which player won.
-branch: 
+branch: winner
 
-- As a user, I can't play the game after the game has been won.
+- As a user, I can't play the game after the game has been won. 
+branch: game-over
 
 - As a user, if no more squares are available, I can see a notice telling me that the game has ended.
 
