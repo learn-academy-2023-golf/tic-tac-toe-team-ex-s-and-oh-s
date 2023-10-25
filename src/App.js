@@ -5,10 +5,19 @@ import './App.css'
 const App = () => {
   const [squares, setSquares] = useState(Array(9).fill(null))
 
+  const [next, setNext] = useState(false)
+
   const handleClick= (i) => {
-    squares[i] = "x"
+    if (next === false) {
+      squares[i] = "x"
+    } else if (next === true) {
+      squares[i] = "o"
+    }
+    
     setSquares([...squares])
     console.log(squares[i])
+    setNext(prev => !prev)
+    console.log(next)
   }
 
   return (
