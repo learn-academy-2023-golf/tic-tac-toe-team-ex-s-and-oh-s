@@ -8,6 +8,10 @@ const App = () => {
   const [next, setNext] = useState(false)
   console.log(squares)
 
+  const reset = () => {
+    setSquares(Array(9).fill(null))
+  }
+
   function calculateWinner(squares) {
       const lines = [
         [0, 1, 2],
@@ -23,6 +27,7 @@ const App = () => {
         const [a, b, c] = lines[i];
         if (squares[a] && squares[a] === squares[b] && squares[a] === squares[c]) {
           alert(`${squares[a]}  is the winner`)
+          reset()
           return squares[a];
         }
       }
